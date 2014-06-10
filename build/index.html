@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta name="description" content="">
+<meta name="author" content="dearty">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0, width=device-width"> -->
+<!-- <meta name="viewport" content="width=1200"> -->
+<meta http-equiv="cleartype" content="on">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="/javascripts/respond.js"></script>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <script>
+	(function(f,w){function m(){}function g(a,b){if(a){"object"===typeof a&&(a=[].slice.call(a));for(var c=0,d=a.length;c<d;c++)b.call(a,a[c],c)}}function v(a,b){var c=Object.prototype.toString.call(b).slice(8,-1);return b!==w&&null!==b&&c===a}function k(a){return v("Function",a)}function h(a){a=a||m;a._done||(a(),a._done=1)}function n(a){var b={};if("object"===typeof a)for(var c in a)a[c]&&(b={name:c,url:a[c]});else b=a.split("/"),b=b[b.length-1],c=b.indexOf("?"),b={name:-1!==c?b.substring(0,c):b,url:a};return(a=p[b.name])&&a.url===b.url?a:p[b.name]=b}function q(a){var a=a||p,b;for(b in a)if(a.hasOwnProperty(b)&&a[b].state!==r)return!1;return!0}function s(a,b){b=b||m;a.state===r?b():a.state===x?d.ready(a.name,b):a.state===y?a.onpreload.push(function(){s(a,b)}):(a.state=x,z(a,function(){a.state=r;b();g(l[a.name],function(a){h(a)});j&&q()&&g(l.ALL,function(a){h(a)})}))}function z(a,b){var b=b||m,c;/\.css[^\.]*$/.test(a.url)?(c=e.createElement("link"),c.type="text/"+(a.type||"css"),c.rel="stylesheet",c.href=a.url):(c=e.createElement("script"),c.type="text/"+(a.type||"javascript"),c.src=a.url);c.onload=c.onreadystatechange=function(a){a=a||f.event;if("load"===a.type||/loaded|complete/.test(c.readyState)&&(!e.documentMode||9>e.documentMode))c.onload=c.onreadystatechange=c.onerror=null,b()};c.onerror=function(){c.onload=c.onreadystatechange=c.onerror=null;b()};c.async=!1;c.defer=!1;var d=e.head||e.getElementsByTagName("head")[0];d.insertBefore(c,d.lastChild)}function i(){e.body?j||(j=!0,g(A,function(a){h(a)})):(f.clearTimeout(d.readyTimeout),d.readyTimeout=f.setTimeout(i,50))}function t(){e.addEventListener?(e.removeEventListener("DOMContentLoaded",t,!1),i()):"complete"===e.readyState&&(e.detachEvent("onreadystatechange",t),i())}var e=f.document,A=[],B=[],l={},p={},E="async"in e.createElement("script")||"MozAppearance"in e.documentElement.style||f.opera,C,j,D=f.head_conf&&f.head_conf.head||"head",d=f[D]=f[D]||function(){d.ready.apply(null,arguments)},y=1,x=3,r=4;d.load=E?function(){var a=arguments,b=a[a.length-1],c={};k(b)||(b=null);g(a,function(d,e){d!==b&&(d=n(d),c[d.name]=d,s(d,b&&e===a.length-2?function(){q(c)&&h(b)}:null))});return d}:function(){var a=arguments,b=[].slice.call(a,1),c=b[0];if(!C)return B.push(function(){d.load.apply(null,a)}),d;c?(g(b,function(a){if(!k(a)){var b=n(a);b.state===w&&(b.state=y,b.onpreload=[],z({url:b.url,type:"cache"},function(){b.state=2;g(b.onpreload,function(a){a.call()})}))}}),s(n(a[0]),k(c)?c:function(){d.load.apply(null,b)})):s(n(a[0]));return d};d.js=d.load;d.test=function(a,b,c,e){a="object"===typeof a?a:{test:a,success:b?v("Array",b)?b:[b]:!1,failure:c?v("Array",c)?c:[c]:!1,callback:e||m};(b=!!a.test)&&a.success?(a.success.push(a.callback),d.load.apply(null,a.success)):!b&&a.failure?(a.failure.push(a.callback),d.load.apply(null,a.failure)):e();return d};d.ready=function(a,b){if(a===e)return j?h(b):A.push(b),d;k(a)&&(b=a,a="ALL");if("string"!==typeof a||!k(b))return d;var c=p[a];if(c&&c.state===r||"ALL"===a&&q()&&j)return h(b),d;(c=l[a])?c.push(b):l[a]=[b];return d};d.ready(e,function(){q()&&g(l.ALL,function(a){h(a)});d.feature&&d.feature("domloaded",!0)});if("complete"===e.readyState)i();else if(e.addEventListener)e.addEventListener("DOMContentLoaded",t,!1),f.addEventListener("load",i,!1);else{e.attachEvent("onreadystatechange",t);f.attachEvent("onload",i);var u=!1;try{u=null==f.frameElement&&e.documentElement}catch(F){}u&&u.doScroll&&function b(){if(!j){try{u.doScroll("left")}catch(c){f.clearTimeout(d.readyTimeout);d.readyTimeout=f.setTimeout(b,50);return}i()}}()}setTimeout(function(){C=!0;g(B,function(b){b()})},300)})(window);
+</script>
+ 
+
+  </head>
+  <body>
+    <div class="container">
+          <header>
+      <div class="ct group">
+        <div class="header--inner group">
+          <a href="#home" class="logo scroll" ><img src="images/logo-milush.svg" alt="" onerror="this.onerror=null; this.src='/images/logo-milush.png'"></a>
+          <nav class="nav-collapse" role="navigation">
+            <ul>
+              <li><a href="#section-services" >Usługi</a></li>
+              <li><a href="#section-help" >Komu mogę pomóc</a></li>
+              <li><a href="#section-proces" >Proces</a></li>
+              <li><a href="#section-klienci"  >Klienci</a></li>
+              <li><a href="#section-kontakt" >Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>  
+      </div> 
+    </header>
+        <div class="content">
+             <section id="home" class="section section-info">
+		<div class="ct">
+				<div class="hero group">
+						<div class="info-img">
+								<img src="images/milena-face.jpg" alt="">
+						</div>
+						<div class="info-text">
+							<h2 class="info-text-title">
+								Mój tekst
+								<span>Twój <span>zysk</span></span>
+							</h2>
+							<p>Nazywam się Milena&nbsp;Leszczyńska&#8209;Sowirka
+i jestem <span class="highlight">web&nbsp;copywriterem.</span></p>
+							<p>Tworzę teksty na strony internetowe które nie tylko informują czy dostarczają rozrywki, ale też intrygują, przekonują i sprzedają Twoje produkty i usługi. </p>
+				    	</div>
+				</div>	
+		</div>
+</section>
+ 
+             <section id="section-education" class="section section-education">
+	<div class="ct">
+		<div class="section-title">
+				<h3>Po co Ci copywriter?</h3>
+				<span>czyli</span>
+				<p>Dlaczego na stronach www najważniejsza jest treść?</p>
+		</div>
+
+		<ul class="education-list">
+			<li class="education-list-row">
+				<div class="education-item ">
+					<h4 class="spr-bef spr-slowa">Słowa sprzedają</h4>
+					<p>Ludzie z reguły nie odwiedzają stron internetowych aby podziwiać ich wygląd. Nie skupiają się też na technologii.Elementy te są oczywiście bardzo ważne.. ale&nbsp;Twoi potencjalni klienci odwiedzają strony z&nbsp;powodu treści. Design przyciąga uwagę, ale&nbsp;to&nbsp;słowa sprzedają.</p>
+				</div>
+				<div class="education-item">
+					<h4 class="spr-bef spr-osobowosc">Twój biznes ma osobowość</h4>
+					<p>Zbyt wiele firm stara sie ukryć swoją osobowość aby być bardziej profesjonalnym. Ich treść staje się jednak sucha, nudna i&nbsp;pozbawiona blasku. Słowa również mogą mieć osobowość. W końcu próbujesz się komunikować z&nbsp;ludźmi a nie z&nbsp;robotami, prawda?</p>
+				</div>
+			</li>	
+			<li class="education-list-row">
+				<div class="education-item">
+					<h4 class="spr-bef spr-inwestycja">Twoja strona to inwestycja</h4>
+					<p>Twoja strona internetowa jest cześcią Twojego procesu sprzedażowego. Oprócz ładnego ubrania, daj jej też coś do powiedzenia. Nadaj swojej firmie unikalny głos, który pomoże Ci zwiększyc sprzedaż i&nbsp;zdobyć klientów.</p>
+				</div>
+				<div class="education-item">
+					<h4 class="spr-bef spr-rozmowa">Strona to rozmowa z klientem</h4>
+					<p>Każda wizyta na Twojej stronie to rozmowa zapoczątkowana przez klienta. Odpowiedz na pytania odwiedzających poprzez prosty, przejrzysty i&nbsp;latwy do zrozumienia tekst.</p>
+				</div>
+			</li>	
+		</ul>
+	</div>
+</section>
+             <section  id="section-services" class="section section-services">
+	<div class="ct">
+			<div class="section-title">
+					<h3>Usługi</h3>
+					<span>czyli</span>
+					<p>W czym tak naprawdę mogę Ci pomóc?</p>
+			</div>
+			<div class="uslugi-container group">
+					<div class="uslugi-box group">
+						<div class="uslugi-box__headline">
+								<h4>1. Tworzę</h4>
+						</div>		
+						<div class="uslugi-box__body">
+							<ul class="list--uslugi group">
+								<li class="li-item">
+									<div class="li-img spr spr-strony"></div>
+									<div class="li-text">
+										<p>Teksty na strony internetowe, landing pages, blogi</p>
+									</div>
+								</li>
+								<li class="li-item">
+									<div class="li-img spr spr-newsletter"></div>
+									<div class="li-text">
+										<p>Teksty na newslettery, oferty sprzedażowe</p>
+									</div>
+								</li>
+								<li class="li-item">
+									<div class="li-img spr spr-slogan"></div>
+									<div class="li-text">
+										<p>Slogany i hasła reklamowe</p>
+									</div>
+								</li>
+							</ul>	
+						</div>
+					</div>
+					<div class="uslugi-box group">	
+							<div class="uslugi-box__headline">
+									<h4>2. By pomóc Ci</h4>
+							</div>	
+							<div class="uslugi-box__body">	
+								<ul class="list">
+									<li>przekonać Twoich klientów do Twojego produktu lub usługi</li>
+									<li>poprawić lub podkreślić wizerunek Twojej marki</li>
+									<li>wyróżnić Cię na tle konkurencji</li>
+									<li>zamienić odwiedzających w Twoich klientów</li>
+									<li>budować markę której ludzie ufają</li>
+								</ul>
+							</div>
+						
+					</div>
+					<div class="uslugi-box group">
+						<div class="uslugi-box__headline">
+								<h4>3. Bo wiem jak</h4>
+						</div>	
+						<div class="uslugi-box__body">	
+							<ul class="list">
+								<li>zrozumieć Twój biznes, Twoje cele oraz potrzeby Twoich klientów</li>
+								<li>pomóc Ci określić korzyści Twojej oferty i przekazać je Twoim odbiorcom</li>
+								<li>efektywnie komunikować wartości i osobowość Twojego biznesu</li>
+								<li>odpowiedzieć na pytania Twoich klientów poprzez prosty, przejrzysty i łatwy do zrozumienia tekst</li>
+								<li>spowodować że będziesz brzmiał wiarygodnie i autorytatywnie, ale wciąż przyjaźnie i dostępnie</li>
+								<li>pokazać Twoim odbiorcom, że jesteś po ich stronie</li>
+							</ul>
+						</div>	
+					</div>
+			</div>
+	</div>	
+</section>
+             <section id="section-help" class="section section-help">
+	<div class="ct">
+		<div class="section-title">
+			<h3>Komu mogę pomóc?</h3>
+			<span>czyli</span>
+			<p>Kto może skorzystać z moich usług?</p>
+		</div>
+
+		<div class="section-body">
+			<div class="tabs-wrap tabs-wrap--pomoc" data-effeckt-type='slide-up'>		   
+			    <ul class="tabs tabs--pomoc">
+			      <li><a href="#tab-1" class="tab tab--pomoc"><span>Firmy</span></a></li>
+			      <li><a href="#tab-2" class="tab tab--pomoc"><span>Agencje reklamowe
+Agencje interaktywne</span></a></li>
+			      <li><a href="#tab-3" class="tab tab--pomoc"><span>Web designerzy</span></a></li>
+			    </ul>
+
+			    <div class="tabs-container tabs-container--pomoc">
+			      <a class="tab-drawer-heading" href="#tab-1">Firmy</a>
+			      <div id="tab-1" class="tab-content tab-content--pomoc">
+			        <h4>Firmy</h4>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, vitae, expedita, inventore pariatur non laborum asperiores quod deserunt consectetur ducimus harum molestiae necessitatibus reprehenderit aut voluptates. Aliquid, error optio eligendi.</p>
+			      </div>
+
+			      <a class="tab-drawer-heading" href="#tab-2">Agencje reklamowe,
+Agencje marketingowe</a>
+			      <div id="tab-2" class="tab-content tab-content--pomoc">
+			        <h4>Agencje reklamowe,
+Agencje interaktywne</h4>
+				    <p>Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend vestibulum odio non vulputate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quae, saepe tenetur molestias harum rerum eligendi nobis eos accusamus in iste ullam ut quis minima non earum quidem ab maiores? Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend vestibulum odio non vulputate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quae, saepe tenetur molestias harum rerum eligendi nobis eos accusamus in iste ullam ut quis minima non earum quidem ab maiores?Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend vestibulum odio non vulputate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quae, saepe tenetur molestias harum rerum eligendi nobis eos accusamus in iste ullam ut quis minima non earum quidem ab maiores?</p>
+			      </div>
+
+			      <a class="tab-drawer-heading" href="#tab-3">Web designerzy</a>
+			      <div id="tab-3" class="tab-content tab-content--pomoc">
+			        <h4>Web designerzy</h4>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, totam, quae, quam vel dolores minus expedita cupiditate eius reprehenderit vitae porro dicta enim eligendi amet inventore doloremque autem iste necessitatibus.</p>
+			      </div>
+			    </div>
+			 </div>
+		</div>
+	</div>
+</section>
+             <section id="section-proces" class="section-proces">	
+	<div class="ct">
+		<div class="section-title">
+				<h3>Proces</h3>
+				<span>czyli</span>
+				<p>Jak wygląda współpraca ze mną?</p>
+		</div>
+		<div class="section-body">
+			<div class="tabs-wrap tabs-wrap--proces" data-effeckt-type='scale'>
+			
+			      <a href="#tab-proces-1" class="tab tab-proces"><i>1</i><span>Pytam</span></a>
+			      <a href="#tab-proces-2" class="tab tab-proces"><i>2</i><span>Proponuję</span></a>
+			      <a href="#tab-proces-3" class="tab tab-proces"><i>3</i><span>Akceptujesz</span></a>
+			      <a href="#tab-proces-4" class="tab tab-proces"><i>4</i><span>Piszę</span></a>
+			      <a href="#tab-proces-5" class="tab tab-proces"><i>5</i><span>Gotowe</span></a>
+
+				    <div class="tabs-container tabs-container--proces">				     
+					      <div id="tab-proces-1" class="tab-content tab-content--proces">
+					        <h4>1. Pytam</h4>
+					        <p>Na poczatek poprosze cie o wypelnienie ankiety. Z niej dowiem sie wiecej o Twoim zleceniu i oczekiwaniach.</p>
+					      </div>
+					      <div id="tab-proces-2" class="tab-content tab-content--proces">
+						    <h4>2. Proponuję</h4>
+						    <p>Na podstawie Twoich odpowiedzi przygotuję wstepną propozycję. Znajdą się w niej: termin przygotowania, ogólny zarys pomysłu na tekst, forma rozliczenia i cena.</p>
+					      </div>				      
+					      <div id="tab-proces-3" class="tab-content tab-content--proces">
+					      	<h4>3. Akceptujesz</h4>
+					        <p>Gdy zaakceptujesz moja propozycje, poprosze cie o oplacenie zaliczki. Po tym zaczynam pisac tekst dla Ciebie. Na calym tym etapie bedziemy kontaktowac sie, jesli pojawia sie jakiekolwiek pytania lub dodatkowe dane do tekstu.</p>
+					      </div>
+					      <div id="tab-proces-4" class="tab-content tab-content--proces">
+					      	<h4>4. Piszę</h4>
+					        <p>Na 2 dni przed ustalona data przesle Ci pierwsza wersje tekstu. Jesli bedziesz miec uwagi dokonam poprawek.</p>
+					      </div>		      
+					      <div id="tab-proces-5" class="tab-content tab-content--proces">
+					      	<h4>5. Gotowe</h4>
+					        <p>W dniu oddania otrzymasz ode mnie gotowy tekst, a ja od Ciebie zaplate. Na tekst udzielam 7-dniowej gwarancji, tzn. jeali w tym czasie poprosisz o poprawke, dokonam jej bez dodatkowych oplat. W cenie otrzymujesz zatem tekst + 2 korekty. Jesli w ciagu 7 dni nie zglosisz uwag bedzie to oznaczac akceptacje ostatecznej wersji tekstu.</p>
+					      </div>		
+				    </div>
+			 </div>
+		</div>
+	</div>
+</section>
+             <section id="section-klienci" class="section-klienci">
+	<div class="ct">
+		<div class="section-title">
+				<h3>Klienci</h3>
+				<span>czyli</span>
+				<p>Z kim współpracowałam do tej pory?</p>
+		</div>
+		<ul class="clients">
+			<li><span class="icon-clients icon-allevo"></span></li><!--
+			--><li><span class="icon-clients icon-floslek"></span></li><!--
+			--><li><span class="icon-clients icon-ergo"></span></li><!--
+			--><li><span class="icon-clients icon-fit"></span></li><!--
+			--><li><span class="icon-clients icon-gosp"></span></li><!--
+			--><li><span class="icon-clients icon-dragon"></span></li>
+		</ul>
+	</div>	
+</section>
+             <section id="section-kontakt" class="section-kontakt">
+	<div class="ct">
+			<div class="section-title">
+					<h3>Kontakt</h3>
+					<span>czyli</span>
+					<p>Rozpocznijmy współpracę</p>
+			</div>
+
+			<div class="section-kontakt-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, quasi, modi, odio natus blanditiis velit omnis fugit eius nam explicabo ullam asperiores commodi laborum voluptate ad tempore voluptatum aliquam dolore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, suscipit, quia, laborum neque error aspernatur ea esse dolorum vel maiores rerum at quos quasi dolore odit qui earum perferendis est.</p>
+				<ul class="kontakt-list">
+					<li class="spr-bef spr-mail">555-555-555</li>
+					<li class="spr-bef spr-tel"><a href="mailto:milena@milush.pl">milena@milush.pl</a></li>
+				</ul>
+			</div>
+	</div>
+</section>
+        </div>
+      <footer class="footer">
+	<div class="ct">
+		<ul class="footer-body">
+			<li class="copy">&copy; 2014 MILUSH Wszelkie prawa zastrzeżone</li>
+			<li class="by">Projekt i realizacja: <a href="#" class="spr spr-dearty" data-tooltip="dearty.com"></a></li>
+		</ul>	
+	</div>
+</footer>
+    </div>  
+    <script>
+    head.js("javascripts/modernizr.custom.js","//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", "javascripts/all.js");
+    </script>
+
+  <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="javascripts/all.js" type="text/javascript"></script> -->
+  </body>
+</html>

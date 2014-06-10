@@ -1,0 +1,88 @@
+.section-kontakt {
+	position: relative;
+	// background: lighten(#484848,10);
+	background:#926E4A url(../images/bg-kontakt_small.jpg) right center no-repeat;
+	background-size:cover;
+	@include mq($bp2){
+		background:#926E4A url(../images/bg-kontakt_medium.jpg) right bottom no-repeat;
+		background-size:cover;
+	}
+	@include mq($bp4){
+		background:#926E4A url(../images/bg-kontakt.jpg) center center no-repeat;
+		background-size:cover;
+	}
+
+
+	.section-title {
+		background:#FBF7EC;
+		padding-bottom: 1.5em;
+		// border-top: 3px solid #926E4A;
+	}
+}
+
+.section-kontakt-body {
+	position: relative;
+			&:after {
+			content:'';
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 10px 15px 0 15px;
+			border-color: #FBF7EC transparent transparent transparent;
+			top:0;
+			left:50%;
+			margin-left: -15px;
+		}
+}
+
+.section-kontakt-text {
+	padding:3em 0 6em;
+	position: relative;
+
+	@include mq($bp1){
+		width: 75%;
+	}
+	@include mq($bp3){
+		padding-top: 6em;
+	}
+	@include mq($bp4){
+		width: 50%;
+	}
+	@include mq($bp5){
+		padding:8em 2em;
+	}
+	p {
+		color:#fff;
+		font-size:16px;
+		@include mq($bp4){
+			font-size:18px;
+		}
+	}
+}
+
+.kontakt-list {
+	color:#fff;
+	list-style: disc;
+	margin-bottom: 1em;
+	padding-left: 1em;
+}
+
+.kontakt-by {
+	margin-top: 3em;
+	li {
+		margin-bottom: 1em;
+		color:#fff;
+		a:hover {
+			opacity:.7;
+		}
+	}
+	li:before {
+		content:'';
+		width:50px;
+		height: 50px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 1em;
+	}
+}

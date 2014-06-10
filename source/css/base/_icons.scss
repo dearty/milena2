@@ -1,0 +1,52 @@
+.spr,
+.spr-bef:before {
+	background-image:url(../images/spr-main.svg);
+	background-repeat:no-repeat;
+}
+
+.no-svg .spr,
+.no-svg .spr-bef:before {
+	background-image:url(../images/spr-main.png);
+}
+
+//before
+.spr-slowa:before {
+	background-position: 0 0 
+}
+
+.spr-osobowosc:before {
+	background-position: -35px 0;
+}
+
+.spr-inwestycja:before {
+	background-position: -70px 0;
+}
+
+.spr-rozmowa:before {
+	background-position: -105px 0;
+}
+
+.spr-mail:before {
+	background-position:0 -194px;
+}
+
+.spr-tel:before {
+	background-position: -52px -194px;
+}
+
+//normal
+.spr-strony {
+	background-position: 0 -110px;
+}
+
+.spr-newsletter {
+	background-position: -81px -110px;
+}
+
+.spr-slogan {
+	background-position: -163px -110px;
+}
+
+.spr-dearty {
+	background-position: 0 -69px;	
+}

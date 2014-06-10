@@ -1,0 +1,57 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $heading-color;
+	font-weight: 700;
+	font-family: $alt-font-family;
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1 {
+	font-size:40px;
+}
+
+h2 {
+	font-size:34px;
+	line-height: 1.1;
+	@include mq($bp5) {
+		font-size:40px;
+	}		
+}
+
+h3 {
+	font-size:26px;
+	line-height: 0.8;
+	@include mq($bp3){
+		font-size:30px;
+		line-height: 1;
+	}
+	@include mq($bp5){
+		font-size:36px;
+	}
+}
+
+
+h4 {
+		font-size:20px;
+		font-family: $alt-font-family;
+		line-height: 1.2;
+		@include mq($bp4){
+			font-size:24px;
+		}
+}
+
+h5 {
+	font-size:em(16);
+}
+
+
+
+

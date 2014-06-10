@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+    <%= partial 'partials/head/head-meta' %>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag "style" %>
+    <%= partial '/partials/head/conditional' %>
+    <%= partial  '/partials/head/head' %> 
+
+  </head>
+  <body>
+    <div class="container">
+      <%= partial 'partials/components/header' %>
+        <div class="content">
+             <%= partial 'partials/components/01-info-section' %> 
+             <%= partial 'partials/components/02-education-section' %>
+             <%= partial 'partials/components/03-services-section' %>
+             <%= partial 'partials/components/04-help-section' %>
+             <%= partial 'partials/components/05-services-proces' %>
+             <%= partial 'partials/components/06-services-klienci' %>
+             <%= partial 'partials/components/07-services-kontakt' %>
+        </div>
+      <%= partial 'partials/components/footer' %>
+    </div>  
+    <script>
+    head.js("javascripts/modernizr.custom.js","//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", "javascripts/all.js");
+    </script>
+
+  <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <%= javascript_include_tag 'all' %> -->
+  </body>
+</html>

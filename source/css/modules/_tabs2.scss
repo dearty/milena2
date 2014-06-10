@@ -1,0 +1,203 @@
+.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.absolute-help {
+  @include mq($bp3){
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+  }  
+}
+
+.show {
+  display: block !important;
+}
+
+.effeckt-show {
+  // visibility: visible;
+}
+
+.tabs-wrap {
+  position: relative;
+  margin:0 auto;
+  .tabs {
+    overflow: hidden; // used to be clearfix
+  }
+  .tabs-container {
+    position: relative;
+    // transition: height 300ms ease-in-out;
+    transition: height 300ms ease-in-out;
+    .tab-content {
+      transition: all 400ms ease-in-out;
+    }
+  }
+
+
+  &[data-effeckt-type='scale'] {
+    .tab-content {
+      &.effeckt-hide {
+        // transform: scale(0.9) translate3d(0,0,0);
+        // -webkit-transform: scale(0.9) translate3d(0,0,0);
+        -webkit-transform:translate3d(0,0,0);
+        opacity:0;
+        @include mq($bp4){
+          transform: scale(0.8) translate3d(0,0,0);
+        -webkit-transform: scale(0.8) translate3d(0,0,0);
+        }
+      }
+      &.effeckt-show {
+      //   transform: scale(1) translate3d(0,0,0);
+      // -webkit-transform: scale(1) translate3d(0,0,0);
+        transition-delay: 0.3s;
+        opacity: 1;
+        -webkit-transform:translate3d(0,0,0);
+        @include mq($bp4){
+           transform: scale(1) translate3d(0,0,0);
+          -webkit-transform: scale(1) translate3d(0,0,0);
+        }
+      }
+    }
+  }
+
+  &[data-effeckt-type='scale-up'] {
+    .tab-content {
+
+        &.effeckt-hide {
+          // transform: translate3d(0,0,0) scale3d(1.1, 1.1, 1.1);
+          // -webkit-transform: translate3d(0,0,0) scale3d(1.1, 1.1, 1.1);
+          transform: scale(1.1) translate3d(0,0,0);
+          -webkit-transform: scale(1.1) translate3d(0,0,0);
+          // -webkit-transform: scale(1.1);
+
+          opacity:0;
+        }
+        &.effeckt-show {
+          // transform: scale(1);
+        // -webkit-transform: scale(1);
+           transform: scale(1) translate3d(0,0,0);
+          -webkit-transform: scale(1) translate3d(0,0,0);
+          transition-delay: 0.4s;
+          opacity: 1;
+        }
+
+    }
+  }
+
+  &[data-effeckt-type='slide-left'] {
+    .tabs-container{
+      overflow:hidden;
+      .tab-content {
+        &.effeckt-hide {
+          height: 0;
+          opacity:0;
+          // padding: 0;
+          @include mq($bp3){
+            height: auto;
+            transform: translateX(-100%);
+            -webkit-transform: translateX(-100%);
+          }
+        }
+        &.effeckt-show {
+          height: auto;
+          opacity:1;
+          // padding:1em;
+          @include mq($bp3){
+            // padding: 0;
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+            transition-delay: 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+  &[data-effeckt-type='slide-right'] {
+    .tabs-container{
+      overflow:hidden;
+      .tab-content {
+        &.effeckt-hide {
+          transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          opacity:0;
+        }
+        &.effeckt-show {
+          transform: translateX(0%);
+          -webkit-transform: translateX(0%);
+          transition-delay: 0.3s;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &[data-effeckt-type='slide-up'] {
+   
+      .tabs-container{
+        overflow:hidden;
+        .tab-content {
+          &.effeckt-hide {
+            height: 0;
+            opacity:0;
+            @include mq($bp3){
+              height: auto;
+              // transform: translateY(-100%);
+              // -webkit-transform: translateY(-100%);
+            }
+          }
+          &.effeckt-show {
+            height: auto;
+            opacity: 1;
+            @include mq($bp3){
+              // height: auto;
+              transform: translateY(0%);
+              // -webkit-transform: translateY(0%);
+              transition-delay: 0.4s;
+            }
+          }
+        }
+      }
+   
+  }
+
+  &[data-effeckt-type='slide-down'] {
+    .tabs-container{
+      overflow:hidden;
+      .tab-content {
+        &.effeckt-hide {
+          transform: translateY(100%);
+          -webkit-transform: translateY(100%);
+          opacity:0;
+        }
+        &.effeckt-show {
+          transform: translateX(0%);
+          -webkit-transform: translateX(0%);
+          transition-delay: 0.3s;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &[data-effeckt-type='flip'] {
+    .tabs-container{
+      overflow:hidden;
+      .tab-content {
+        &.effeckt-hide {
+          transform: rotateY(-90deg) scale(1.1);
+          -webkit-transform: rotateY(-90deg) scale(1.1);
+          opacity:0;
+        }
+        &.effeckt-show {
+          transform: rotateY(0deg) scale(1);
+           -webkit-transform: rotateY(0deg) scale(1);
+          transition-delay: 0.3s;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

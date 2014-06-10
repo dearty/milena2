@@ -1,0 +1,92 @@
+.section-info {
+	padding-top: 80px;
+	padding-bottom: 20px;
+	position: relative;
+	width: 100%;
+	background:#FEFBF2 url(../images/bg-hero_small.jpg) center center no-repeat;
+	background-size:cover;
+	@include mq($bp3){
+		background:#FEFBF2 url(../images/bg-hero.jpg) center center no-repeat;
+		background-size:cover;
+		padding-top: 75px;
+		vertical-align: middle;
+	}
+
+}
+
+.hero {
+	padding:60px 20px;
+	padding:20px 20px 60px;
+	padding: 20px;
+	position: relative;
+	border:1px solid $third-color;
+	@include mq($bp4){
+		padding-left:80px;
+		padding-right: 80px;
+	}
+}
+
+.info-text {
+	@include mq($bp3){
+		float: left;
+		width: 60%;	
+		vertical-align: middle;
+		padding-right: 1em;
+		padding-top: 30px;
+	}
+	@include mq($bp5){
+		line-height: 1.7;
+	}
+	
+	p:nth-of-type(1) {
+		margin-bottom: .5em;
+		white-space:pre-wrap;
+	}
+}
+
+.info-text p{
+	max-width:450px;		
+}
+
+
+.info-text-title {
+	margin-bottom: 1em;
+	>span {
+		display: block;
+		font-size:1.3em;
+		span {
+			color:$primary-color;
+		}
+	}
+}
+
+.highlight {
+	font-weight: 700;
+
+}
+
+.info-img {
+	position: relative;
+	padding-bottom: 2em;
+	text-align: center;
+	@include mq($bp3) {
+		float: right;
+		text-align: left;
+		padding-bottom: 0;
+		width: 40%;
+		vertical-align: top;
+		vertical-align: middle;
+	}
+	img {
+		width: 250px;
+		height:auto;
+		border-radius:500px;
+		@include mq($bp3){
+			width: 450px;
+		}
+		@include mq($bp4){
+			width:450px;
+
+		}	
+	}
+}
