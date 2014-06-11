@@ -3,52 +3,71 @@
 	position: relative;
 	background:#F9F5EA;
 	@include mq($bp5b){
-		// padding-bottom: 6em;
-		background:#F9F5EA url(../images/bg-uslugi.jpg) center center no-repeat;
+		// background:#F9F5EA url(../images/bg-uslugi.jpg) center center no-repeat;
 		background-size:cover;
+	}
+	.section-title {
+		// background:#E5D3BB;
+		background: linear-gradient(to bottom, tint(#EFE2D3,0) 0%,tint(#EFE2D3,20) 100%); /* W3C */
+		// background:#EFE2D3;
+		&:after {
+			border-top-color:tint(#EFE2D3,20);
+			// border-top-color:#EFE2D3;
+		}
 	}
 }
 
 .uslugi-container {
-	max-width:900px;
-	// width: 90%;
-	margin:3em auto 2em;
-
+	margin:4em auto 0;
+	@include mq($bp3){
+		margin-top: 4em;
+		margin-bottom: 4em;
+	}
 }
 
+.uslugi-box-ct {	
+	padding:5px;
+	margin-bottom: 2em;
+	@include mq($bp5b){
+		float: left;
+		width: 40%;
+		margin-bottom: 0;
+		&:first-child {
+			width: 20%;
+		}
+
+	
+	}
+}
+
+.highlighted {
+	background:#fff;
+}
+
+@include mq($bp5b){
+	.uslugi-container:hover .uslugi-box-ct:hover {
+		background:#fff;
+	}
+	.uslugi-container:hover .highlighted {
+		background:none;
+	}
+	.uslugi-container:hover .highlighted:hover {
+		background:#fff;
+	}
+}
 
 
 .uslugi-box {
-	margin-bottom: 2em;
 	width: 100%;
-	// background:#fff;
-	// background:rgba(#fff,.7);
-	
-	// border-top:1px solid #fff;
-	border:1px solid #e5e5e5;
-	// border-radius:4px;
+	box-shadow:0 0 3px rgba(#000,.1);
 	text-align: center;
-	// box-shadow:0 0 2px rgba(#000,.2);
-	// border-bottom-width:3px;
-	// box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.13);
-}
-
-.l-float {
-	@include mq($bp5b){
-		float: left;
-		width: 49.5%;
-	}
-}
-.l-float-first {
-	@include mq($bp5b){
-		margin-right: 1%;
-	}
 }
 
 
-.uslugi-box:first-child {
+.uslugi-box-ct:first-child {
 	@include mq($bp5b) {
-		// margin-bottom: 4em;
+		// margin-left: auto;
+		// margin-right: auto;
 	}
 
 }
@@ -56,9 +75,8 @@
 
 .uslugi-box__headline {
 	position: relative;
-	// border-bottom: 1px solid #eee;
-
-	// background:rgba(#fff,.7);
+	border-bottom: 1px solid #F2EEE2;
+	background:rgba(#fff,.5);
 	&:before {
 		content:attr(data-number);		
 		position: absolute;
@@ -77,69 +95,72 @@
 		box-shadow:0 2px 1px rgba(#000,.2);
 	}
 	h4 {
-		padding: 1.75em 0;
+		padding: 1.75em 0 1em;
 		display: block;
 		font-family: $base-font-family;
-		font-size:16px;
+		font-size:14px;
 		text-transform: uppercase;
 		font-weight: 300;
 		letter-spacing: 0.01em;
+		// color:$primary-color;
+		// font-weight: 700;
+		// font-size:18px;
+
 	}	
 }
 
 
 .uslugi-box__body {
 	padding:2em 1em;
-	// border-top: 1px solid #d8d8d8;
-	// display: inline-block; //test
 	display: block;
 	text-align: left;
-	// max-width:600px;
 	margin-left: auto;
 	margin-right: auto;
-	background:rgba(#fff,.7);
-	// box-shadow:inset 0 -1px 1px rgba(#000,.1);
+	background:rgba(#f5f5f5,.5);
+	
 	position: relative;
+	@include mq($bp5b){
+		height:520px;
+	}
 	&:before {
-		content:'';
-		position: absolute;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 0 15px 15px 15px;
-		border-color: transparent transparent rgba(#fff,.7) transparent;
-		top:-15px;
-		left:50%;
-		margin-left: -15px;
+		// content:'';
+		// position: absolute;
+		// width: 0;
+		// height: 0;
+		// border-style: solid;
+		// border-width: 0 15px 15px 15px;
+		// border-color: transparent transparent rgba(#fff,.7) transparent;
+		// top:-15px;
+		// left:50%;
+		// margin-left: -15px;
 	}
 }
 
 
 
 .list {
-	@include mq($bp5b){
-		min-height: 350px;
-	}
+	max-width:600px;
+	margin-left: auto;
+	margin-right: auto;
 	li{
 		position: relative;
-		// padding-left: 20px;
+		padding-left: 14px;
+		// margin-left: 1em;
 		margin-bottom: 1em;
-		list-style: disc;
-		margin-left: 1em;
-		// list-style-position: inside;
+		// list-style: disc;
 		&:last-child{
 			margin-bottom: 0;
 		}
 		&:before{
-			// content:'';
-			// position: absolute;
-			// left: 0;
-			// top: 8px;
-			// width: 10px;
-			// height: 10px;		
-			// background:$primary-color;
-			// border-radius:500px;	
-			// border-radius:50%;
+			content:'';
+			position: absolute;
+			left: 0;
+			top: 10px;
+			width: 5px;
+			height: 5px;		
+			background:#BDBDBD;
+			border-radius:500px;	
+			border-radius:50%;
 		}
 	}
 }
@@ -155,9 +176,9 @@
 			width:33.3333%;
 		}
 		@include mq($bp5b){
-			// float: none;
-			// width: 100%;
-			// margin-bottom: 2em;
+			float: none;
+			width: 100%;
+			margin-bottom: 2em;
 
 		}
 	}

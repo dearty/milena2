@@ -73,13 +73,14 @@ header {
   width: 100%;
   left: 0;
   top: 0;
-  // border-bottom: 2px solid #Fff;
-  // box-shadow: inset 0 -1px 0 darken(#F0E3D2,5);
+  // border-bottom:1px solid #f1f1f1;
+
+  // border-top: 2px solid #5898B1;
+  // border-bottom: 1px solid #5898B1;
   
   background:#fff;
   @include mq($bp4){
-    // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, transparent 85%);
-    // background:#fff;
+  
     background:rgba(#fff,.8);
   }
 }
@@ -113,6 +114,7 @@ header {
 
 .header--inner {
   @include mq($bp4){
+    // border-bottom: 1px solid #1E92B2;
     // padding-left:10px;
     // padding-right: 10px;
     // border-bottom: 4px solid $l-beige;

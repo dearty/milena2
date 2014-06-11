@@ -1,6 +1,6 @@
 .section-info {
 	padding-top: 80px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	position: relative;
 	width: 100%;
 	background:#FEFBF2 url(../images/bg-hero_small.jpg) center center no-repeat;
@@ -8,9 +8,12 @@
 	@include mq($bp3){
 		background:#FEFBF2 url(../images/bg-hero.jpg) center center no-repeat;
 		background-size:cover;
-		padding-top: 75px;
+		// padding-top: 75px;
+		padding-bottom: 20px;
+		padding-top: 85px;
 		vertical-align: middle;
 	}
+
 
 }
 

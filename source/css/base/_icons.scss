@@ -50,3 +50,21 @@
 .spr-dearty {
 	background-position: 0 -69px;	
 }
+
+
+//section title arrow
+.triangle-down {
+		&:after {
+			content:'';
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 10px 15px 0 15px;
+			// border-color: #C0A283 transparent transparent transparent;
+			border-color:transparent;
+			bottom:-10px;
+			left:50%;
+			margin-left: -15px;
+		}
+}

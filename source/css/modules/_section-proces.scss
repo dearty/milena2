@@ -6,8 +6,13 @@
 		background-size:cover;
 	}
 	.section-title {
-		position: relative;
-		z-index: 1;
+		background:#E5D3BB;
+		background:rgba(#E5D3BB,.4);
+		// background: linear-gradient(to bottom, tint(#E5D3BB,5) 0%,tint(#E5D3BB,25) 100%); /* W3C */
+		&:after {
+			// border-top-color:tint(#E5D3BB,25);
+			border-top-color:rgba(#E5D3BB,.4);
+		}
 	}
 }
 
@@ -180,7 +185,7 @@
 			border-radius: 0 560px 560px 0;
 			margin-left: 280px;
 			// background:darken(#F7EEE4,5);
-			border-right:5px solid #8A6845;
+			border-right:5px solid $primary-color;
 			//
 			height:560px;
 			top: -40px;

@@ -18,11 +18,25 @@
 	}
 }
 
+
 .section-title {
 	text-align: center;
-	padding-top: 30px;
-	overflow: hidden;
-
+	padding-top: 10px;
+	// overflow: hidden;
+	padding-bottom: 1em;
+	position: relative;
+	@include mq($bp4){
+		// padding-top: 30px;
+	}
+	h3 {
+		padding-top: .5em;
+		@include mq($bp4){
+			// padding-top:0;
+		}
+	}
+	.ct {
+		overflow: hidden;
+	}
 	span {
 
 		font-family: $alt-font-family;
@@ -68,7 +82,7 @@
 		padding-right: 5px;
 		margin-bottom: 0;
 		text-transform: uppercase;
-		background:#FBF7EC;
+		// background:#FBF7EC;
 		@include mq($bp3){
 			font-size:14px;
 		}
@@ -79,19 +93,18 @@
 }
 
 
-.section-proces,
-.section-services {
-	.section-title{
-		p {
-			background: #fff;
-		}
+
+.section-services,
+.section-proces {
+	.section-title span:after,
+	.section-title span:before {
+		border-top-color:#fff;
+		border-bottom-color:#fff;
 	}
+
 }
 
 .section-kontakt {
-	.section-title p {
-		background:none;
-	}
 	&:before {
 		opacity:.6;
 	}
